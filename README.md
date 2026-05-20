@@ -8,7 +8,7 @@ Run locally:
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python run.py
+python application.py
 ```
 
 Endpoints:
