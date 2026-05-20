@@ -11,6 +11,16 @@ pip install -r requirements.txt
 python application.py
 ```
 
+Deploy to AWS Elastic Beanstalk:
+
+```bash
+eb init -p python-3.11 my-app
+eb create my-app-env
+eb deploy
+```
+
+The app includes a `Procfile` and `.ebextensions/python.config` so Elastic Beanstalk can load `application:application`.
+
 Endpoints:
 - GET / -> HTML welcome
 - GET /api/health -> JSON health check
